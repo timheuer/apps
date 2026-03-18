@@ -1,0 +1,31 @@
+name: Auto-label Issues
+
+on:
+    issues:
+        types: [opened]
+
+jobs:
+    label-app:
+        runs-on: ubuntu-latest
+        permissions:
+            issues: write
+        steps:
+            - name: Add app label
+              uses: actions/github-script@v7
+              with:
+                  script: |
+                      const body = context.payload.issue.body || '';
+                      const apps = ['Zilch', 'Sidewall', 'Crown Climb', 'Shiplet', 'TrueUp', 'Crucigram'];
+
+                      for (const app of apps) {
+                        // Match the form dropdown response format
+                        if (body.includes(`### App\n\n${app}`)) {
+                          await github.rest.issues.addLabels({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            issue_number: context.issue.number,
+                            labels: [app.toLowerCase().replace(' ', '-')]
+                          });
+                          break;
+                        }
+                      }
