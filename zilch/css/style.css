@@ -284,6 +284,11 @@ footer .container {
     align-items: center;
 }
 
+footer nav {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
 footer nav a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
