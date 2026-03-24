@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug or issue with one of our apps
-title: "[Support]"
+title: "[Support]: "
 body:
   - type: dropdown
     id: app
