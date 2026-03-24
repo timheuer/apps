@@ -1,5 +1,5 @@
-name: Bug Report
-description: Report a bug or issue with one of our apps
+name: App Support Request
+description: Get support for one of our apps by submitting a request with details here.
 title: "[Support]: "
 body:
   - type: dropdown
