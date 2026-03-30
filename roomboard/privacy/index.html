@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RoomBoard</title>
+    <meta name="description" content="Privacy Policy for RoomBoard - Household Chore Coordination">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" href="../logo.png">
+    <link rel="icon" type="image/png" href="../logo.png">
+    <style>
+        .privacy-content {
+            padding: var(--spacing-xl) 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        .privacy-content h1 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .privacy-content h2 {
+            color: var(--color-primary);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.5rem;
+        }
+
+        .privacy-content h3 {
+            color: var(--color-primary);
+            margin-top: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+            font-size: 1.15rem;
+        }
+
+        .privacy-content p {
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-text);
+        }
+
+        .privacy-content ul,
+        .privacy-content ol {
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-md);
+        }
+
+        .privacy-content li {
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-text);
+        }
+
+        .last-updated {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .privacy-content code {
+            background: var(--color-bg-alt);
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+
+        .privacy-table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .privacy-table th,
+        .privacy-table td {
+            padding: var(--spacing-sm);
+            text-align: left;
+            border: 1px solid var(--color-border);
+            vertical-align: top;
+        }
+
+        .privacy-table th {
+            background: var(--color-bg-alt);
+            font-weight: 600;
+        }
+
+        .privacy-table td {
+            color: var(--color-text);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="privacy-content">
+        <div class="container">
+            <a href="../" class="back-link">&larr; Back to Home</a>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle"><strong>RoomBoard</strong></p>
+            <p class="last-updated">Last updated: March 29, 2026</p>
+
+            <h2>Introduction</h2>
+            <p>RoomBoard ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains
+                how we collect, use, disclose, and safeguard your information when you use our mobile application
+                RoomBoard (the "App").</p>
+            <p>Please read this privacy policy carefully. By using the App, you agree to the collection and use of
+                information in accordance with this policy.</p>
+
+            <h2>Information We Collect</h2>
+            <h3>Information You Provide</h3>
+            <p>When you create an account and use RoomBoard, we collect:</p>
+            <table class="privacy-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                        <th>How Collected</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Display Name</strong></td>
+                        <td>To identify you within your household</td>
+                        <td>From your Apple ID or Google account at sign-in</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email Address</strong></td>
+                        <td>Account identification and recovery</td>
+                        <td>From your Apple ID or Google account at sign-in</td>
+                    </tr>
+                    <tr>
+                        <td><strong>User ID</strong></td>
+                        <td>To uniquely identify your account</td>
+                        <td>Generated by Firebase Authentication</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Household Membership</strong></td>
+                        <td>To associate you with your households</td>
+                        <td>When you create or join a household</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chore Completion Data</strong></td>
+                        <td>To calculate fairness scores and track history</td>
+                        <td>When you complete tasks in the App</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Information We Do NOT Collect</h3>
+            <ul>
+                <li>We do <strong>not</strong> collect your location</li>
+                <li>We do <strong>not</strong> access your photos, camera, or microphone</li>
+                <li>We do <strong>not</strong> access your contacts or calendar</li>
+                <li>We do <strong>not</strong> collect device identifiers for advertising</li>
+                <li>We do <strong>not</strong> track you across other apps or websites</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ol>
+                <li><strong>Provide the Service</strong> — Create and manage your account, associate you with
+                    households, assign chores, and track completions.</li>
+                <li><strong>Calculate Fairness</strong> — Our fairness algorithm uses your completion history to
+                    equitably distribute tasks among household members.</li>
+                <li><strong>Sync Across Devices</strong> — Your data is stored in Firebase Firestore so you can access
+                    it from any device signed into your account.</li>
+                <li><strong>Authenticate Your Identity</strong> — We use Firebase Authentication with Apple Sign-In and
+                    Google Sign-In to securely verify your identity.</li>
+            </ol>
+            <p>We do <strong>not</strong> use your information for:</p>
+            <ul>
+                <li>Advertising or marketing</li>
+                <li>Selling to third parties</li>
+                <li>Profiling or behavioral targeting</li>
+                <li>Analytics beyond basic app functionality</li>
+            </ul>
+
+            <h2>Data Storage and Security</h2>
+            <p>Your data is stored securely using:</p>
+            <ul>
+                <li><strong>Firebase Authentication</strong> — Manages your sign-in credentials using industry-standard
+                    OAuth 2.0 protocols.</li>
+                <li><strong>Firebase Firestore</strong> — Stores your household data, chore assignments, and completion
+                    history in Google Cloud infrastructure with encryption at rest and in transit.</li>
+            </ul>
+            <p>We implement security rules to ensure you can only access:</p>
+            <ul>
+                <li>Your own user profile</li>
+                <li>Households you are a member of</li>
+                <li>Chore data within those households</li>
+            </ul>
+
+            <h2>Data Sharing</h2>
+            <p>We do <strong>not</strong> sell, rent, or share your personal information with third parties for their
+                marketing purposes.</p>
+            <p>We share data only:</p>
+            <ol>
+                <li><strong>With Your Household Members</strong> — Other members of your household can see your display
+                    name, assigned chores, and completion status. This is the core functionality of the App.</li>
+                <li><strong>With Service Providers</strong> — We use Google Firebase for authentication and data
+                    storage. Firebase processes data on our behalf under their privacy policies:
+                    <ul>
+                        <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
+                        <li><a href="https://cloud.google.com/security/privacy">Google Cloud Privacy</a></li>
+                    </ul>
+                </li>
+                <li><strong>As Required by Law</strong> — We may disclose your information if required by law, court
+                    order, or governmental authority.</li>
+            </ol>
+
+            <h2>Your Rights and Choices</h2>
+            <h3>Access Your Data</h3>
+            <p>You can view all your data within the App in the Settings screen.</p>
+
+            <h3>Delete Your Account</h3>
+            <p>You can delete your account at any time from <strong>Settings &gt; Delete Account</strong>. This will:
+            </p>
+            <ul>
+                <li>Permanently delete your user profile</li>
+                <li>Remove your membership from all households</li>
+                <li>Delete your chore completion history</li>
+            </ul>
+            <p>Account deletion is irreversible. Data may take up to 30 days to be fully purged from backup systems.</p>
+
+            <h3>Sign Out</h3>
+            <p>You can sign out at any time from Settings. This removes your local session but preserves your account
+                for future sign-in.</p>
+
+            <h3>Household Data</h3>
+            <p>If you leave a household, your membership is removed but historical completion records may be retained
+                for fairness calculations (without identifying information).</p>
+
+            <h2>Data Retention</h2>
+            <p>We retain your data as follows:</p>
+            <table class="privacy-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Retention Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Account Profile</strong></td>
+                        <td>Until you delete your account</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Household Membership</strong></td>
+                        <td>Until you leave the household or delete your account</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chore Completions</strong></td>
+                        <td>Rolling history retained for fairness calculations</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>After you delete your account, we delete your personal data within 30 days from all active systems.</p>
+
+            <h2>Children's Privacy</h2>
+            <p>RoomBoard is not intended for children under 13. We do not knowingly collect personal information from
+                children under 13. If you are a parent or guardian and believe your child has provided us with personal
+                information, please contact us and we will delete it.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>The App uses the following third-party services:</p>
+            <table class="privacy-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Privacy Policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase Authentication</td>
+                        <td>Sign-in and account management</td>
+                        <td><a href="https://firebase.google.com/support/privacy">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Firestore</td>
+                        <td>Data storage</td>
+                        <td><a href="https://firebase.google.com/support/privacy">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apple Sign-In</td>
+                        <td>Authentication provider</td>
+                        <td><a href="https://www.apple.com/legal/privacy/">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Google Sign-In</td>
+                        <td>Authentication provider</td>
+                        <td><a href="https://policies.google.com/privacy">Link</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>International Data Transfers</h2>
+            <p>Your data may be transferred to and processed in the United States and other countries where Google Cloud
+                operates data centers. These transfers are conducted under standard data protection safeguards.</p>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+            <ul>
+                <li>Posting the new Privacy Policy in the App</li>
+                <li>Updating the "Last Updated" date above</li>
+            </ul>
+            <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> tim.heuer@gmail.com</li>
+                <li><strong>Web:</strong> <a
+                        href="https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=RoomBoard">Log a
+                        Support Issue</a></li>
+            </ul>
+
+            <h2>Summary</h2>
+            <table class="privacy-table">
+                <thead>
+                    <tr>
+                        <th>What We Collect</th>
+                        <th>What We Don't Collect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Display name</td>
+                        <td>Location</td>
+                    </tr>
+                    <tr>
+                        <td>Email address</td>
+                        <td>Photos/Camera</td>
+                    </tr>
+                    <tr>
+                        <td>User ID</td>
+                        <td>Contacts</td>
+                    </tr>
+                    <tr>
+                        <td>Household membership</td>
+                        <td>Advertising identifiers</td>
+                    </tr>
+                    <tr>
+                        <td>Chore completions</td>
+                        <td>Cross-app tracking data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tim Heuer. All rights reserved.</p>
+            <nav>
+                <a href="../privacy/">Privacy Policy</a>
+                <a href="https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=RoomBoard">Problems?
+                    Log an issue.</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

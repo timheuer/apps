@@ -14,6 +14,7 @@ body:
         - Shiplet
         - TrueUp
         - Crucigram
+        - RoomBoard
     validations:
       required: true
 

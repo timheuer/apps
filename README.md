@@ -3,8 +3,9 @@
 This is the support site for apps developed by [Tim Heuer](https://timheuer.com). It serves as a central hub for support for the following apps:
 
 | App | Description | Support |
-|-----|-------------|---------|
+| ----- | ------------- | --------- |
 | **[Zilch](https://apps.apple.com/app/zilch)** | A strategic card game where the goal is simple: score the lowest. Flip, swap, and reveal your way to victory against the bot. | [Request Support](https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=Zilch) |
+| **[RoomBoard](https://timheuer.github.io/apps/roomboard/)** | Household chore coordination for families and roommates, with shared tasks, fairness tracking, and privacy-first account management. | [Log a Support Issue](https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=RoomBoard) |
 | **[Sidewall](https://timheuer.github.io/sidewallapp)** | Precision tire pressure calculator for cyclists, helping you dial in ride-ready PSI for your bike, setup, and conditions. | [Request Support](https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=Sidewall) |
 | **[TrueUp](https://truemeup.app)** | Expense splitting made simple, helping friends settle shared costs and keep group spending fair without the awkwardness. | [Request Support](https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=TrueUp) |
 | **[Shiplet](https://shiplet.app)** | Track all your packages in one beautiful app with real-time updates, multi-carrier support, and a delightful experience. | [Request Support](https://github.com/timheuer/apps/issues/new?template=bug_report.yml&app=Shiplet) |
